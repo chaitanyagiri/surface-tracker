@@ -1,29 +1,20 @@
-# Create T3 App
+# Surface Tracker
 
 This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
 
-## What's next? How do I make an app with this?
+## Improvements
+Since the scope of this project can range from simple to very complex depending upon requirements, hence a lot could have been done to make it even better here are some of the ideas that could be implemented to make it even more robust:
+* Since backend apis are run in a serverless manner hence data captured is not persistent, we can ideally implement a persistent queue to ensure deliverability of events.
+* Work on responsiveness even further, try to make it optimised every screensize
+* We can index database according to the surface_tag since currently system seems to be read heavy
+* Furthermore a validation and authentication middleware can be implemented.
+* Improved logging, add monitoring and triggers etc...
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+## Screenshots
+<img width="1440" alt="Screenshot 2024-09-18 at 10 40 08 PM" src="https://github.com/user-attachments/assets/2213c23f-79d7-40fa-a55b-160b041bed6b">
+<img width="1440" alt="Screenshot 2024-09-18 at 10 38 24 PM" src="https://github.com/user-attachments/assets/ff0b5162-ce84-4b8b-a282-449521022fcf">
+<img width="1440" alt="Screenshot 2024-09-18 at 10 38 16 PM" src="https://github.com/user-attachments/assets/3f6ed9aa-a28a-45c0-b003-d389c9a45dd2">
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+## Environment Variables?
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
-
-## Learn More
-
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
-
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
-
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
-
-## How do I deploy this?
-
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+Only postgres database url is required as variable 'DATABASE_URL'
